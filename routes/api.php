@@ -56,4 +56,5 @@ Route::get('/hello/{name}', function($name){
 Route::group(['prefix'=>'v1'], function(){
 
 	Route::resource('genders','GendersController');
+	Route::resource('artists','ArtistsController');
 });
